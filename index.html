@@ -7,44 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treact</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <script src="script.js.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+   <script src="https://kit.fontawesome.com/1134e9b50a.js" crossorigin="anonymous"></script>  
+   <script src="index.js.js"></script>
 </head>
 
 <body>
     <section id="landing">
         <nav>
+          <div class="nav__container">
             <div class="row nav__row">
                 <div class="nav__logo">
                     <img src="assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="logo">  
                     <div class="nav_logo--title">Treact</div>
             </div>
+              <ul class="nav__links">
+                    <li><a href="#" class="nav__link">Blog</a></li>
+                    <li><a href="#" class="nav__link">Pricing</a></li>
+                    <li><a href="#" class="nav__link">Contact US</a></li>
+                    <li><a href="#" class="nav__link">Login</a></li>
+                    <li><a href="#" class="nav__link" nav--link--primary>Sign Up</a></li>
+            </ul>
             </div>
-            <div class="nav__links">
-                    <a href="#" class="nav__link">About</a>
-                    <a href="#" class="nav__link">Blog</a>
-                    <a href="#" class="nav__link">Pricing</a>
-                    <a href="#" class="nav__link">Contact US</a>
-                    <a href="#" class="nav__link">Login</a>
-                    <a href="#" class="nav__link" nav--link--primary>Sign Up</a>
-            </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn__menu--svg">
-              <line x1="3" y1="12" x2="21" y2="12"></line>
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
+             <button class="btn__menu"  onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
                 </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu  btn__menu--close"  onclick="closeMenu()">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list">
+                        <a href="#features" class="menu__link" onclick="closeMenu()">about</a></li>
+                        <a href="#features" class="menu__link" onclick="closeMenu()">blog</a></li>
+                        <a href="#features" class="menu__link" onclick="closeMenu()">pricing</a></li>
+                        <a href="#features" class="menu__link" onclick="closeMenu()">contact__us</a></li>
+                        <a href="#features" class="menu__link" onclick="closeMenu()">login</a></li>
+                        <a href="#features" class="menu__link" onclick="closeMenu() menu__link--primary">signup</a></li>
+                    </li>
+
+                </ul>
             </div>
-        </nav>
         <div class="modal">
             <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="light___StyledCloseIcon-lj69nl-14 fASujC">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
+               
             </button>
             <div class="modal__links">
                 <a href="#about" class="modal__link">About</a>
@@ -55,6 +61,7 @@
                 <a href="#signup"class="modal__link modal__link--primary">Sign Up</a>
             </div>
         </div>
+    </nav>
         <header>
             <div class="container">
                 <div class="row">
