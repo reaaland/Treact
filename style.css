@@ -185,7 +185,7 @@ nav {
   width: auto;
   transition: all 300ms;
 }
-.nav__link--primary:after {
+.nav__link--primary::after {
   content: "";
   width: 0;
   height: 0;
@@ -427,6 +427,12 @@ MOBILE RESPONSIVENESS ↓
     #values .row {
         flex-direction: column-reverse;
     }
+      .nav__links {
+    display: none;
+  }
+  .btn__menu {
+    display: block;
+  }
     #steps .row,
     #testimonials .row {
         flex-direction: column;
