@@ -6,55 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treact</title>
-    <link rel="stylesheet" href="sty
-    
-    
-    
-    le.css">
+    <link rel="stylesheet" href="style.css">
    <script src="https://kit.fontawesome.com/1134e9b50a.js" crossorigin="anonymous"></script>  
-   <script src="index.js.js"></script>
+   <script src="script.js"></script>
 </head>
 
 <body>
     <section id="landing">
         <nav>
-          <div class="nav__container">
-            <div class="row nav__row">
-                <div class="nav__logo">
-                    <img src="assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="logo">  
-                    <div class="nav_logo--title">Treact</div>
-            </div>
-              <ul class="nav__links">
-                    <li><a href="#" class="nav__link">Blog</a></li>
-                    <li><a href="#" class="nav__link">Pricing</a></li>
-                    <li><a href="#" class="nav__link">Contact US</a></li>
-                    <li><a href="#" class="nav__link">Login</a></li>
-                    <li><a href="#" class="nav__link  nav__link--primary">Sign Up</a></li>
-            </ul>
-            </div>
-             <button class="btn__menu"  onclick="openMenu()">
-                <i class="fa-solid fa-bars"></i>
+            <div class="nav__container">
+                <div class="row nav__row">
+                    <div class="nav__logo">
+                        <img src="assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="logo">  
+                        <div class="nav_logo--title">Treact</div>
+                    </div>
+                    <div class="nav__links">
+                        <a href="#" class="nav__link">About</a>
+                        <a href="#" class="nav__link">Blog</a>
+                        <a href="#" class="nav__link">Pricing</a>
+                        <a href="#" class="nav__link">Contact US</a>
+                        <a href="#" class="nav__link">Login</a>
+                        <a href="#" class="nav__link nav__link--primary">Sign Up</a></li>
+               
+                    </div>
+                </div>
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fa-solid fa-bars"></i>
                 </button>
-            <div class="menu__backdrop">
-                <button class="btn__menu  btn__menu--close"  onclick="closeMenu()">
-                    <i class="fa-solid fa-times"></i>
-                </button>
-                <ul class="menu__links">
-                    <li class="menu__list">
-                        <a href="#features" class="menu__link" onclick="closeMenu()">about</a></li>
-                        <a href="#features" class="menu__link" onclick="closeMenu()">blog</a></li>
-                        <a href="#features" class="menu__link" onclick="closeMenu()">pricing</a></li>
-                        <a href="#features" class="menu__link" onclick="closeMenu()">contact__us</a></li>
-                        <a href="#features" class="menu__link" onclick="closeMenu()">login</a></li>
-                        <a href="#features" class="menu__link  menu__link--primary"onclick="closeMenu()"">signup</a></li>
-                    </li>
-                </ul>
-             </div>
-            </div>            
+                </div>
+            </nav>
+                <div class="menu">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                <div class="menu__links">
+                       <a href="#about" class="menu__link" onclick="closeMenu()">about
+                       </a>
+                       <a href="#blog" class="menu__link" onclick="closeMenu()">blog</a>
+                       <a href="#pricing" class="menu__link" onclick="closeMenu()">pricing</a>
+                       <a href="#contact__us" class="menu__link" onclick="closeMenu()">contact US</a>
+                       <a href="#login" class="menu__link" onclick="closeMenu()">login</a>
+                       <a href="#signup" class="menu__link menu__link--primary" onclick="closeMenu()">signup</a>
+                      
+                </div>
+            </div>
+    
+    </section>
+
     <header>
             <div class="container">
                 <div class="row">
-                    <!--  -->Enter Header / About Us Section<!--  -->
+                    <div class="header__description">
+                        <h1>Beautiful React Template <span class="purple">for you.</span></h1>
+                        <p class="header__email"
+                
+                
+              
             </div>
         </header>
     </section>
