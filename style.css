@@ -303,7 +303,7 @@ header .row {
   margin: 8px;
   height: calc(100% - 16px);
   border-radius: 500px;
-  width: 165px;
+  width: 160px;
   border: none;
   background-color: #6415ff;
   color: #fff;
@@ -325,7 +325,7 @@ header .row {
   position: absolute;
   top: 0;
   bottom: 0;
-  z-index: 4;
+  z-index: 1;
   transition: border-color 300ms;
 }
 .header__email--input::placeholder {
@@ -1092,7 +1092,6 @@ footer {
     align-items: flex-end;
   }
 
-  }
   h1 {
     font-size: 36px;
     color: #1a202c;
