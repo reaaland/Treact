@@ -1084,7 +1084,6 @@ footer {
   font-weight: 500;
 }
 
-
 /* MOBILE RESPONSIVENESS */
 
 @media (max-width: 1280px) {
@@ -1124,6 +1123,7 @@ footer {
   .testimonials__description {
     width: calc(100% - 40%);
   }
+}
 
 @media (max-width: 1024px) {
   .nav__links {
