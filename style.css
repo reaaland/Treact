@@ -445,7 +445,6 @@ header {
   z-index: 2;
   display: flex;
 }
-
 .quality__img {
   z-index: 1;
 }
@@ -486,6 +485,7 @@ header {
 .step__description {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin-left: 24px;
   max-width: 320px;
 }
@@ -519,8 +519,8 @@ header {
   margin-top: 48px;
 }
 .value {
-  margin-top: 2rem;
-  margin-right: 2rem;
+  margin-top: 32px;
+  margin-right: 32px;
   align-items: flex-start;
   display: flex;
   flex-direction: column;
